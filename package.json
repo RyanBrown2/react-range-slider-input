@@ -18,7 +18,6 @@
   "module": "dist/index.js",
   "files": [
     "dist/",
-    "src/**/*.d.ts",
     "README.md",
     "LICENSE"
   ],
@@ -48,7 +47,7 @@
     "build:types": "tsc --project tsconfig.json",
     "eject": "react-scripts eject",
     "test": "standard && jest",
-    "prepare": "npm run build && npm run build:types"
+    "prepare": "npm run build && npm run build:types && cp src/index.d.ts dist/index.d.ts"
   },
   "browserslist": {
     "production": [
