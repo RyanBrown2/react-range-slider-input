@@ -18,6 +18,7 @@
   "module": "dist/index.js",
   "files": [
     "dist/",
+    "src/**/*.d.ts",
     "README.md",
     "LICENSE"
   ],
@@ -44,7 +45,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "babel src/lib --out-dir dist --copy-files --extensions \".js,.ts\"",
-    "build:types": "tsc --emitDeclarationOnly",
+    "build:types": "tsc --project tsconfig.json",
     "eject": "react-scripts eject",
     "test": "standard && jest",
     "prepare": "npm run build && npm run build:types"
