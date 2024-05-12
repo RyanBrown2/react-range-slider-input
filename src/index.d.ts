@@ -5,8 +5,8 @@ declare module 'react-range-slider-input' {
   export interface RangeSliderInputProps {
     id?: string;
     className?: string;
-    min: number;
-    max: number;
+    min?: number;
+    max?: number;
     step?: number;
     defaultValue?: number[];
     value?: number[];
