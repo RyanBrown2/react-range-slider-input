@@ -45,7 +45,8 @@
     "build": "babel src/lib --out-dir dist --copy-files --extensions \".js,.ts\"",
     "build:types": "tsc --emitDeclarationOnly",
     "eject": "react-scripts eject",
-    "test": "standard && jest"
+    "test": "standard && jest",
+    "prepare": "npm run build && npm run build:types"
   },
   "browserslist": {
     "production": [
